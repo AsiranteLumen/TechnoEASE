@@ -23,33 +23,52 @@
       class="w-full relative bg-white h-[1024px] overflow-hidden text-center text-77xl text-firebrick-100 font-oswald"
     >
       <div
-        class="absolute top-[0px] left-[0px] bg-whitesmoke-300 w-[851px] h-[1024px]"
-      ></div>
-      <div class="absolute top-[281px] left-[90px] w-[740px] h-[415px]"></div>
-      <img
-        class="absolute top-[214px] left-[167px] w-[587px] h-[602px] object-cover"
-        alt=""
-        src="/public/image-1@2x.png"
-      />
-
-      <div
-        class="absolute top-[490px] left-[96px] flex items-center w-[729px] h-[338px]"
+        class="absolute top-[0px] left-[0px] bg-whitesmoke-300 w-[815px] h-[1024px]"
       >
-        <span class="w-full">
-          <p class="m-0">EASE</p>
-          <p class="m-0 text-41xl">
-            Enhanced Accessibility for Student Enrollment
-          </p>
-        </span>
+        <div
+          class="absolute top-[280.5px] left-[79.6px] w-[655.9px] h-[415.3px] overflow-hidden"
+        ></div>
+        <div
+          class="absolute top-[217px] left-[112.1px] w-[590.9px] h-[590px] overflow-hidden"
+        >
+          <img
+            class="absolute top-[0px] left-[15.9px] w-[575px] h-[590px] object-cover"
+            alt=""
+            src="/public/uelogo@2x.png"
+          />
+        </div>
+        <div
+          class="absolute top-[490.5px] left-[77.5px] w-[660.2px] h-[337.4px] overflow-hidden"
+        >
+          <div
+            class="absolute top-[0px] left-[14.2px] flex items-center w-[646px] h-[337.4px]"
+          >
+            <span class="w-full">
+              <p class="m-0">EASE</p>
+              <p class="m-0 text-41xl">
+                Enhanced Accessibility for Student Enrollment
+              </p>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute top-[168.7px] left-[257.3px] w-[300.6px] h-[369.4px] overflow-hidden"
+        >
+          <img
+            class="absolute top-[0px] left-[14.2px] w-[286.4px] h-[369.4px] object-cover"
+            alt=""
+            src="/public/owl@2x.png"
+          />
+        </div>
+        <img
+          class="absolute top-[103px] left-[90px] max-h-full w-[87px] object-contain cursor-pointer"
+          alt=""
+          src="/public/arrow-7.svg"
+          id="arrow"
+        />
       </div>
-      <img
-        class="absolute top-[167px] left-[298px] w-[323px] h-[369px] object-cover"
-        alt=""
-        src="/public/image-3@2x.png"
-      />
-
       <div
-        class="absolute top-[124px] left-[918px] w-[461px] h-[776.2px] text-11xl text-palegoldenrod-100 font-montserrat"
+        class="absolute top-[124px] left-[891px] w-[461px] h-[776.2px] text-11xl text-palegoldenrod-100 font-montserrat"
       >
         <div
           class="absolute top-[0px] left-[0px] rounded-xl bg-brown box-border w-[461px] h-[776.2px] border-[1px] border-solid border-black"
@@ -60,13 +79,13 @@
           [2nd SEMESTER, SY 2023-2024]
         </div>
         <i
-          class="absolute top-[682.6px] left-[54.8px] text-[23px] [text-decoration:underline] flex font-bold items-center justify-center w-[353.1px] h-[23.6px] cursor-pointer"
-          id="downloadRegistrationForm"
+          class="absolute top-[682.6px] left-[54.8px] text-4xl [text-decoration:underline] flex font-bold items-center justify-center w-[353.1px] h-[23.6px] cursor-pointer"
+          id="downloadRegistrationForm1"
           >Download Registration Form</i
         >
         <div
           class="absolute top-[598.3px] left-[115.5px] text-6xl [text-decoration:underline] flex items-center justify-center w-[225.9px] h-[25.3px] cursor-pointer"
-          id="forgotPasswordText"
+          id="forgotPasswordText1"
         >
           Forgot Password?
         </div>
@@ -75,10 +94,11 @@
         >
           <div
             class="absolute top-[0px] left-[0px] rounded-11xl-5 bg-palegoldenrod-100 w-[353.1px] h-[51.4px] cursor-pointer"
-            id="loginButton"
+            id="loginButton1"
           ></div>
           <b
-            class="absolute top-[10.2px] left-[123.9px] flex items-center justify-center w-[103.7px] h-[31.2px]"
+            class="absolute top-[10.2px] left-[123.9px] flex items-center justify-center w-[103.7px] h-[31.2px] cursor-pointer"
+            id="loginText1"
             >Login</b
           >
         </div>
@@ -157,44 +177,45 @@
           >
         </div>
       </div>
-      <img
-        class="absolute top-[103px] left-[90px] max-h-full w-[87px] object-contain cursor-pointer"
-        alt=""
-        src="/public/arrow-7.svg"
-        id="arrow"
-      />
     </div>
 
     <script>
-      var downloadRegistrationForm = document.getElementById(
-        "downloadRegistrationForm"
+      var arrow = document.getElementById("arrow");
+      if (arrow) {
+        arrow.addEventListener("click", function (e) {
+          window.location.href = "./login2.html";
+        });
+      }
+      
+      var downloadRegistrationForm1 = document.getElementById(
+        "downloadRegistrationForm1"
       );
-      if (downloadRegistrationForm) {
-        downloadRegistrationForm.addEventListener("click", function () {
+      if (downloadRegistrationForm1) {
+        downloadRegistrationForm1.addEventListener("click", function () {
           window.open(
             "https://whova.com/wp-content/uploads/2021/10/registration-form-new-2021-sponsors.png"
           );
         });
       }
       
-      var forgotPasswordText = document.getElementById("forgotPasswordText");
-      if (forgotPasswordText) {
-        forgotPasswordText.addEventListener("click", function (e) {
-          window.location.href = "./forget-password.html";
+      var forgotPasswordText1 = document.getElementById("forgotPasswordText1");
+      if (forgotPasswordText1) {
+        forgotPasswordText1.addEventListener("click", function (e) {
+          window.location.href = "./forgot-pass.html";
         });
       }
       
-      var loginButton = document.getElementById("loginButton");
-      if (loginButton) {
-        loginButton.addEventListener("click", function (e) {
+      var loginButton1 = document.getElementById("loginButton1");
+      if (loginButton1) {
+        loginButton1.addEventListener("click", function (e) {
           window.location.href = "./dashboard.html";
         });
       }
       
-      var arrow = document.getElementById("arrow");
-      if (arrow) {
-        arrow.addEventListener("click", function (e) {
-          window.location.href = "./login1.html";
+      var loginText1 = document.getElementById("loginText1");
+      if (loginText1) {
+        loginText1.addEventListener("click", function (e) {
+          window.location.href = "./dashboard.html";
         });
       }
       </script>

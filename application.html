@@ -81,7 +81,8 @@
             class="absolute top-[0px] left-[0px] rounded-11xl-5 bg-palegoldenrod-100 w-[353.1px] h-[51.4px]"
           ></div>
           <b
-            class="absolute top-[14.4px] left-[14.4px] flex items-center justify-center w-[295px] h-[20.2px]"
+            class="absolute top-[14.4px] left-[14.4px] flex items-center justify-center w-[295px] h-[20.2px] cursor-pointer"
+            id="proceedToEnrollment"
             >Proceed to Enrollment</b
           >
           <img
@@ -243,10 +244,17 @@
       var arrow = document.getElementById("arrow");
       if (arrow) {
         arrow.addEventListener("click", function (e) {
-          window.location.href = "./login1.html";
+          window.location.href = "./login2.html";
         });
       }
-      
+
+      var proceedToEnrollment = document.getElementById("proceedToEnrollment");
+      if (proceedToEnrollment) {
+        proceedToEnrollment.addEventListener("click", function (e) {
+          window.location.href = "./enrollment-requirements.html";
+        });
+      }
+
       var proceedEnrollmentContainer = document.getElementById(
         "proceedEnrollmentContainer"
       );
@@ -255,6 +263,6 @@
           window.location.href = "./enrollment-requirements.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>

@@ -66,17 +66,18 @@
           id="proceedToPaymentButton"
         >
           <div
-            class="absolute top-[0px] left-[0px] rounded-11xl-5 bg-palegoldenrod-100 w-[416.3px] h-[50.1px] cursor-pointer"
-            id="rectangle"
+            class="absolute top-[0px] left-[0px] rounded-11xl-5 bg-palegoldenrod-100 w-[416.3px] h-[50.1px]"
           ></div>
           <b
-            class="absolute top-[15.6px] left-[12.9px] flex items-center justify-center w-[296.1px] h-[19.7px]"
+            class="absolute top-[15.6px] left-[12.9px] flex items-center justify-center w-[296.1px] h-[19.7px] cursor-pointer"
+            id="loginText"
             >Login</b
           >
           <img
-            class="absolute top-[25.5px] left-[311px] max-h-full w-[49.7px]"
+            class="absolute top-[25.5px] left-[311px] max-h-full w-[49.7px] cursor-pointer"
             alt=""
             src="/public/arrow-21.svg"
+            id="arrowIcon"
           />
         </div>
         <b
@@ -169,20 +170,27 @@
           window.location.href = "./enrollment-requirements.html";
         });
       }
-      
-      var rectangle = document.getElementById("rectangle");
-      if (rectangle) {
-        rectangle.addEventListener("click", function (e) {
-          window.location.href = "./login1.html";
+
+      var loginText = document.getElementById("loginText");
+      if (loginText) {
+        loginText.addEventListener("click", function (e) {
+          window.location.href = "./login2.html";
         });
       }
-      
+
+      var arrowIcon = document.getElementById("arrowIcon");
+      if (arrowIcon) {
+        arrowIcon.addEventListener("click", function (e) {
+          window.location.href = "./login2.html";
+        });
+      }
+
       var proceedToPaymentButton = document.getElementById("proceedToPaymentButton");
       if (proceedToPaymentButton) {
         proceedToPaymentButton.addEventListener("click", function (e) {
-          window.location.href = "./login1.html";
+          window.location.href = "./login2.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>

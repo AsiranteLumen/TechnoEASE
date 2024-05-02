@@ -85,6 +85,7 @@ module.exports = {
       lg: "18px",
       mini: "15px",
       mid: "17px",
+      "4xl": "23px",
       inherit: "inherit",
     },
     screens: {

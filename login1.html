@@ -98,7 +98,8 @@
           />
 
           <div
-            class="absolute top-[22px] left-[81.7px] flex items-center justify-center w-[263.7px]"
+            class="absolute top-[22px] left-[81.7px] flex items-center justify-center w-[263.7px] cursor-pointer"
+            id="enrollNowText"
           >
             Enroll Now!
           </div>
@@ -114,7 +115,8 @@
           />
 
           <div
-            class="absolute top-[20px] left-[147.7px] flex items-center justify-center w-[131.3px]"
+            class="absolute top-[20px] left-[147.7px] flex items-center justify-center w-[131.3px] cursor-pointer"
+            id="loginText"
           >
             Login
           </div>
@@ -133,27 +135,41 @@
           window.open("https://www.ue.edu.ph/cal/");
         });
       }
-      
+
+      var enrollNowText = document.getElementById("enrollNowText");
+      if (enrollNowText) {
+        enrollNowText.addEventListener("click", function (e) {
+          window.location.href = "./application.html";
+        });
+      }
+
       var enrollButtonContainer = document.getElementById("enrollButtonContainer");
       if (enrollButtonContainer) {
         enrollButtonContainer.addEventListener("click", function (e) {
           window.location.href = "./application.html";
         });
       }
-      
+
       var loginButton = document.getElementById("loginButton");
       if (loginButton) {
         loginButton.addEventListener("click", function (e) {
           window.location.href = "./student-login.html";
         });
       }
-      
+
+      var loginText = document.getElementById("loginText");
+      if (loginText) {
+        loginText.addEventListener("click", function (e) {
+          window.location.href = "./student-login.html";
+        });
+      }
+
       var loginContainer1 = document.getElementById("loginContainer1");
       if (loginContainer1) {
         loginContainer1.addEventListener("click", function (e) {
           window.location.href = "./student-login.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>
